@@ -28,7 +28,7 @@ RELAX NG.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_javadir}}
 
-install -D trang.jar $RPM_BUILD_ROOT%{_javadir}
+install trang.jar $RPM_BUILD_ROOT%{_javadir}
 
 cat >$RPM_BUILD_ROOT%{_bindir}/trang <<'EOF'
 #!/bin/sh
